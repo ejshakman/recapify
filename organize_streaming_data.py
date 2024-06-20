@@ -6,6 +6,7 @@
 import json
 from collections import defaultdict
 import os
+import shutil
 
 # Function to remove specified keys from each entry
 def remove_keys(entries, keys_to_remove):
@@ -67,3 +68,6 @@ for data_type, type_data in data_by_type_year.items():
         with open(output_file_path, 'w') as f:
             json.dump(entries, f, indent=2)
         print(f"Data for {data_type} in year {year} written to {output_file_path}")
+
+# Delete "Spotify Extended Streaming History/"
+shutil.rmtree("Spotify Extended Streaming History")
