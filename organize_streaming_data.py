@@ -21,7 +21,7 @@ keys_to_remove = [
 ]
 
 # Directory containing JSON files
-directory = 'extended_streaming_data/'
+directory = 'Spotify Extended Streaming History/'
 
 # Dictionary to hold split data by (type, year)
 data_by_type_year = defaultdict(lambda: defaultdict(list))
