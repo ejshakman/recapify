@@ -28,7 +28,7 @@ jobs:
     #     pip install flake8
     #     flake8 .
 
-    - name: Run tests
+    - name: Run tests and generate coverage report
       run: |
         pip install pytest
-        pytest
+        pytest --cov=src
